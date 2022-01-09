@@ -76,9 +76,7 @@ app.post("/register", (req, res)=> {
     
 }) 
 
-app.listen(9002,() => {
-    console.log("BE started at port 9002")
-})
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
