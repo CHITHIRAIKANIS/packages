@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-mongoose.connect("mongodb://localhost:27017/Login", {
+mongoose.connect("mongodb+srv://chithiraikani:DwuDKfgsZRXcM3Go@cluster0.4hyfp.mongodb.net/capstone-project?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
