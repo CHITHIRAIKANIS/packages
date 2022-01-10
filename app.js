@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-mongoose.connect("mongodb+srv://chithiraikani:IDywYSGZLAkbqVGm@cluster0.jeoez.mongodb.net/project?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://chithiraikani:TUpyBLYslxM9II7k@cluster0.jeoez.mongodb.net/project?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
