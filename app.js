@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-mongoose.connect("mongodb+srv://chithiraikani:xt0SZIOualwbHgcE@cluster0.jeoez.mongodb.net/newproject?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://chithiraikani:IDywYSGZLAkbqVGm@cluster0.jeoez.mongodb.net/project?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
     password: String
 })
 
-const User = new mongoose.model("User", userSchema)
+const User = new mongoose.model("User", userSchema,"users")
 
 //Routes
 app.post("/login", (req, res)=> {
